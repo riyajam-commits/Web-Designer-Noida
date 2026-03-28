@@ -1,222 +1,1249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi-IN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Designer Noida | Affordable Web Development Services</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --primary-color: #1e3a8a; 
-            --secondary-color: #3b82f6; 
-            --accent-color: #f59e0b; 
-            --dark-bg: #0f172a;
-            --light-bg: #f8fafc;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-            --white: #ffffff;
-            --transition: all 0.3s ease;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Designer Noida | ₹5000 Se Website – Call 8882674843</title>
+<meta name="description" content="Noida ki sabse affordable aur professional website design company. Static website sirf ₹5000 mein. Call karo abhi: 8882674843">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+/* ══════════════════════════════════
+   DESIGN TOKENS
+══════════════════════════════════ */
+:root{
+  --ink:#0a0e1a;
+  --ink2:#131928;
+  --ink3:#1c2640;
+  --blue:#1847f0;
+  --blue2:#0f35c4;
+  --amber:#f5a623;
+  --amber2:#e8950f;
+  --green:#16c784;
+  --red:#ef4444;
+  --white:#ffffff;
+  --off:#f4f6fb;
+  --muted:#64748b;
+  --border:#e2e8f2;
+  --card:#ffffff;
+  --r:14px;
+  --r-sm:8px;
+  --shadow:0 4px 24px rgba(24,71,240,.13);
+  --shadow-lg:0 16px 56px rgba(24,71,240,.18);
+  --tr:all .28s cubic-bezier(.4,0,.2,1);
+  --font-h:'Syne',sans-serif;
+  --font-b:'DM Sans',sans-serif;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-b);background:var(--white);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:#f0f0f0}
+::-webkit-scrollbar-thumb{background:var(--blue);border-radius:4px}
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        html { scroll-behavior: smooth; }
-        body { line-height: 1.6; color: var(--text-main); background-color: var(--white); }
+/* ══════ LAYOUT ══════ */
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.sec{padding:90px 0}
+.sec-sm{padding:60px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .btn { display: inline-block; padding: 12px 28px; border-radius: 5px; text-decoration: none; font-weight: 600; transition: var(--transition); cursor: pointer; border: none; text-align: center; }
-        .btn-primary { background: var(--primary-color); color: var(--white); }
-        .btn-primary:hover { background: var(--secondary-color); transform: translateY(-2px); }
-        .btn-accent { background: var(--accent-color); color: var(--white); }
-        .btn-accent:hover { background: #d97706; transform: translateY(-2px); }
-        .section-padding { padding: 80px 0; }
-        .text-center { text-align: center; }
-        h2 { font-size: 2.5rem; margin-bottom: 20px; color: var(--dark-bg); }
+/* ══════ TYPE ══════ */
+h1,h2,h3,h4{font-family:var(--font-h);line-height:1.15}
+h1{font-size:clamp(2.2rem,5vw,4rem);font-weight:800}
+h2{font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:700}
+h3{font-size:clamp(1rem,2vw,1.2rem);font-weight:700}
+p{line-height:1.75;color:var(--muted)}
 
-        /* --- Header --- */
-        header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); }
-        .logo span { color: var(--secondary-color); }
-        .nav-links { display: flex; list-style: none; gap: 25px; }
-        .nav-links a { text-decoration: none; color: var(--text-main); font-weight: 500; transition: var(--transition); }
-        .nav-links a:hover { color: var(--secondary-color); }
-        .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
+.eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);background:rgba(24,71,240,.08);border:1px solid rgba(24,71,240,.2);padding:5px 14px;border-radius:30px;margin-bottom:16px}
+.eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--blue);animation:dot 1.5s infinite}
+@keyframes dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
 
-        /* --- Hero Section --- */
-        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: var(--white); padding: 160px 0 100px; text-align: center; position: relative; }
-        .hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
-        .hero p { font-size: 1.25rem; margin-bottom: 35px; opacity: 0.9; }
-        .hero-btns { display: flex; gap: 15px; justify-content: center; }
+/* ══════ BUTTONS ══════ */
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-b);font-weight:600;font-size:.95rem;padding:14px 30px;border-radius:50px;cursor:pointer;border:none;transition:var(--tr);white-space:nowrap;position:relative;overflow:hidden}
+.btn::after{content:'';position:absolute;inset:0;background:rgba(255,255,255,.12);opacity:0;transition:opacity .2s}
+.btn:hover::after{opacity:1}
+.btn:active{transform:scale(.97)}
 
-        /* --- Services --- */
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
-        .service-card { padding: 40px; background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: var(--transition); border: 1px solid #f1f5f9; }
-        .service-card:hover { transform: translateY(-10px); border-color: var(--secondary-color); }
-        .service-card i { font-size: 3rem; color: var(--secondary-color); margin-bottom: 20px; }
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 6px 22px rgba(24,71,240,.38)}
+.btn-blue:hover{background:var(--blue2);transform:translateY(-2px);box-shadow:0 10px 32px rgba(24,71,240,.45)}
 
-        /* --- Portfolio --- */
-        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px; }
-        .portfolio-item { position: relative; border-radius: 10px; overflow: hidden; height: 250px; background: #eee; }
-        .portfolio-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(30, 58, 138, 0.9); display: flex; align-items: center; justify-content: center; opacity: 0; transition: var(--transition); }
-        .portfolio-item:hover .portfolio-overlay { opacity: 1; }
-        .portfolio-overlay a { color: white; text-decoration: none; border: 1px solid white; padding: 10px 20px; border-radius: 5px; }
+.btn-amber{background:var(--amber);color:#fff;box-shadow:0 6px 22px rgba(245,166,35,.4)}
+.btn-amber:hover{background:var(--amber2);transform:translateY(-2px);box-shadow:0 10px 32px rgba(245,166,35,.5)}
 
-        /* --- Pricing --- */
-        .pricing-bg { background: var(--light-bg); }
-        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
-        .pricing-card { background: var(--white); padding: 40px; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .pricing-card.popular { border: 2px solid var(--secondary-color); transform: scale(1.05); z-index: 10; }
-        .price { font-size: 2.5rem; font-weight: 700; margin: 20px 0; color: var(--primary-color); }
+.btn-white{background:#fff;color:var(--ink);font-weight:700}
+.btn-white:hover{background:#f0f4ff;transform:translateY(-2px)}
 
-        /* --- Floating Buttons --- */
-        .float-btn { position: fixed; bottom: 30px; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000; transition: var(--transition); }
-        .float-whatsapp { right: 30px; background-color: #25d366; }
-        .float-call { right: 30px; bottom: 105px; background-color: var(--secondary-color); }
+.btn-outline{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+.btn-outline:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
 
-        /* --- Footer --- */
-        footer { background: var(--dark-bg); color: var(--white); padding: 60px 0 20px; margin-top: 80px; }
-        
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
-            .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; }
-            .nav-links.active { display: flex; }
-            .menu-toggle { display: block; }
-            .pricing-card.popular { transform: none; }
-        }
-    </style>
+.btn-ghost{background:transparent;color:var(--blue);font-size:.88rem;padding:10px 20px}
+.btn-ghost i{font-size:.75rem;transition:transform .2s}
+.btn-ghost:hover i{transform:translateX(4px)}
+
+.btn-wa{background:#25d366;color:#fff;box-shadow:0 6px 22px rgba(37,211,102,.4)}
+.btn-wa:hover{background:#1ebe5d;transform:translateY(-2px)}
+
+/* ══════════════════════════════════
+   URGENCY TOPBAR
+══════════════════════════════════ */
+.urgency-bar{background:linear-gradient(90deg,var(--amber),#e07000,var(--amber));background-size:300% 100%;animation:shimmer 3s ease infinite;padding:9px 16px;text-align:center;font-size:.82rem;font-weight:600;color:#fff;letter-spacing:.01em;line-height:1.5;word-break:normal;overflow-wrap:normal}
+@keyframes shimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.urgency-bar strong{color:#fff;font-weight:800}
+.urgency-bar a{color:#fff;text-decoration:underline;font-weight:700}
+@media(max-width:600px){.urgency-bar{font-size:.72rem;padding:8px 12px}}
+
+/* ══════════════════════════════════
+   NAVBAR
+══════════════════════════════════ */
+#nav{position:fixed;top:0;left:0;right:0;z-index:999;transition:var(--tr);margin-top:var(--ubar-h,38px)}
+#nav.scrolled{margin-top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(20px);box-shadow:0 2px 24px rgba(0,0,0,.08)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1160px;margin:0 auto;padding:16px 20px;transition:padding .3s}
+#nav.scrolled .nav-inner{padding:12px 20px}
+
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-h)}
+.logo-icon{width:38px;height:38px;border-radius:9px;background:var(--blue);display:flex;align-items:center;justify-content:center;color:#fff;font-size:.95rem;flex-shrink:0}
+.logo-text{font-size:1.1rem;font-weight:800;color:var(--ink)}
+#nav:not(.scrolled) .logo-text{color:#fff}
+.logo-text em{font-style:normal;color:var(--amber)}
+
+.nav-links{list-style:none;display:flex;gap:4px}
+.nav-links a{padding:7px 14px;border-radius:7px;font-size:.87rem;font-weight:500;color:rgba(255,255,255,.8);transition:var(--tr)}
+#nav.scrolled .nav-links a{color:#444}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.15)}
+#nav.scrolled .nav-links a:hover{color:var(--blue);background:rgba(24,71,240,.07)}
+
+.nav-cta{display:flex;gap:10px;align-items:center}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:7px;border-radius:7px;border:1px solid rgba(255,255,255,.3)}
+#nav.scrolled .hamburger{border-color:var(--border)}
+.hamburger span{width:20px;height:2px;background:#fff;border-radius:2px;transition:var(--tr)}
+#nav.scrolled .hamburger span{background:var(--ink)}
+
+.mob-menu{display:none;position:fixed;inset:0;background:#fff;z-index:1000;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.mob-menu.open{display:flex}
+.mob-menu a{font-family:var(--font-h);font-size:1.6rem;font-weight:700;color:var(--ink);opacity:.75;padding:10px 30px;transition:var(--tr)}
+.mob-menu a:hover{opacity:1;color:var(--blue)}
+.mob-close{position:absolute;top:16px;right:16px;border:none;background:var(--off);border-radius:8px;padding:9px 16px;cursor:pointer;font-weight:600;font-size:.9rem}
+
+/* ══════════════════════════════════
+   HERO
+══════════════════════════════════ */
+#hero{padding-top:calc(var(--ubar-h,38px) + 90px);padding-bottom:80px;background:var(--ink);position:relative;overflow:hidden;min-height:100vh;display:flex;align-items:center}
+.hero-mesh{position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 60% 40%,rgba(24,71,240,.25) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 10% 80%,rgba(245,166,35,.08) 0%,transparent 60%)}
+.hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:55px 55px}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:center;width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+
+/* Hero left */
+.hero-l .eyebrow{color:var(--amber);background:rgba(245,166,35,.12);border-color:rgba(245,166,35,.3)}
+.hero-l .eyebrow::before{background:var(--amber)}
+.hero-h1{color:#fff;margin-bottom:14px;font-size:clamp(2.4rem,5vw,4rem)}
+.hero-h1 .grad{background:linear-gradient(90deg,#6fa3ff 0%,#a5c8ff 50%,var(--amber) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{color:rgba(255,255,255,.65);font-size:1.05rem;max-width:500px;margin-bottom:12px;line-height:1.75}
+.hero-price-strip{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 20px;margin-bottom:28px;font-size:.9rem;color:rgba(255,255,255,.8)}
+.hero-price-strip strong{color:var(--amber);font-size:1.2rem;font-family:var(--font-h)}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+.hero-proof{display:flex;align-items:center;gap:14px}
+.hero-avatars{display:flex}
+.hero-avatars .av{width:34px;height:34px;border-radius:50%;border:2px solid var(--ink);background:linear-gradient(135deg,#1847f0,#6fa3ff);display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#fff;margin-left:-8px}
+.hero-avatars .av:first-child{margin-left:0}
+.hero-proof-text{font-size:.82rem;color:rgba(255,255,255,.6)}
+.hero-proof-text strong{color:#fff}
+.hero-stars{color:var(--amber);font-size:.85rem}
+
+/* Hero right – Live Site Preview */
+.hero-r{position:relative;display:flex;justify-content:center}
+.device-frame{width:100%;max-width:440px;background:#0d1117;border-radius:18px;border:1px solid rgba(255,255,255,.1);overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.6),0 0 0 1px rgba(24,71,240,.25);animation:bobble 5s ease-in-out infinite}
+@keyframes bobble{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.device-bar{background:#161b22;padding:11px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,.06)}
+.device-dots{display:flex;gap:5px}
+.device-dots span{width:10px;height:10px;border-radius:50%}
+.device-dots span:nth-child(1){background:#ff5f57}
+.device-dots span:nth-child(2){background:#ffbd2e}
+.device-dots span:nth-child(3){background:#28ca41}
+.device-url{flex:1;background:rgba(255,255,255,.05);border-radius:20px;padding:5px 14px;font-size:.73rem;color:#6e7b9a}
+.device-screen{padding:0;overflow:hidden}
+/* Mini website inside device */
+.mini-site{background:#fff}
+.ms-nav{background:var(--blue);padding:10px 16px;display:flex;align-items:center;justify-content:space-between}
+.ms-logo{font-family:var(--font-h);font-size:.7rem;font-weight:800;color:#fff}
+.ms-navlinks{display:flex;gap:8px}
+.ms-navlinks span{font-size:.55rem;color:rgba(255,255,255,.7)}
+.ms-hero{background:linear-gradient(135deg,#0a1628,var(--blue));padding:22px 16px;text-align:center}
+.ms-h{font-family:var(--font-h);font-size:.9rem;font-weight:800;color:#fff;margin-bottom:6px}
+.ms-p{font-size:.6rem;color:rgba(255,255,255,.7);margin-bottom:12px}
+.ms-btn{background:var(--amber);color:#fff;font-size:.6rem;font-weight:700;padding:5px 14px;border-radius:20px;display:inline-block}
+.ms-services{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;padding:12px}
+.ms-card{background:#f8faff;border-radius:6px;padding:8px;text-align:center;border:1px solid #e8edf5}
+.ms-card-i{font-size:.9rem;margin-bottom:3px}
+.ms-card-t{font-size:.52rem;font-weight:600;color:#333}
+.ms-stats{display:flex;border-top:1px solid #e8edf5}
+.ms-stat{flex:1;text-align:center;padding:8px;border-right:1px solid #e8edf5}
+.ms-stat:last-child{border-right:none}
+.ms-stat-n{font-family:var(--font-h);font-size:.75rem;font-weight:800;color:var(--blue)}
+.ms-stat-l{font-size:.48rem;color:#888}
+
+/* Floating badge */
+.hero-badge{position:absolute;background:#fff;border-radius:12px;padding:10px 16px;display:flex;align-items:center;gap:9px;font-size:.78rem;font-weight:700;color:var(--ink);box-shadow:0 10px 32px rgba(0,0,0,.22);white-space:nowrap}
+.hb-ic{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;color:#fff;flex-shrink:0}
+.hb1{top:5%;left:-36px;animation:fl1 3.8s ease-in-out infinite}
+.hb2{bottom:10%;right:-24px;animation:fl2 4.2s ease-in-out .6s infinite}
+@keyframes fl1{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(-3deg)}}
+@keyframes fl2{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(-10px) rotate(2deg)}}
+
+/* ══════════════════════════════════
+   SOCIAL PROOF TICKER
+══════════════════════════════════ */
+.proof-bar{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:14px 0;overflow:hidden}
+.proof-track{display:flex;gap:0;animation:proof-scroll 30s linear infinite;width:max-content}
+.proof-item{display:flex;align-items:center;gap:10px;padding:0 40px;border-right:1px solid var(--border);font-size:.85rem;font-weight:500;color:#444;white-space:nowrap}
+.proof-item i{color:var(--blue);font-size:1rem}
+.proof-item .star{color:var(--amber)}
+@keyframes proof-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ══════════════════════════════════
+   WHY WEBSITE SECTION
+══════════════════════════════════ */
+#why{background:#fff}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+.why-card{background:var(--off);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px;transition:var(--tr);position:relative;overflow:hidden}
+.why-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue);border-radius:4px 0 0 4px;transform:scaleY(0);transform-origin:bottom;transition:transform .3s}
+.why-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(24,71,240,.2);background:#fff}
+.why-card:hover::before{transform:scaleY(1)}
+.why-icon{width:48px;height:48px;border-radius:12px;background:rgba(24,71,240,.08);border:1px solid rgba(24,71,240,.15);display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--blue);margin-bottom:18px;transition:var(--tr)}
+.why-card:hover .why-icon{background:var(--blue);color:#fff;border-color:transparent}
+.why-card h3{font-size:1rem;margin-bottom:8px;color:var(--ink)}
+.why-card p{font-size:.88rem}
+
+/* ══════════════════════════════════
+   TRUST NUMBERS
+══════════════════════════════════ */
+.trust-band{background:var(--blue);padding:50px 0}
+.trust-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.tn{text-align:center;padding:20px;border-right:1px solid rgba(255,255,255,.15)}
+.tn:last-child{border-right:none}
+.tn-num{font-family:var(--font-h);font-size:2.4rem;font-weight:800;color:#fff;display:block;line-height:1}
+.tn-lbl{font-size:.78rem;color:rgba(255,255,255,.7);margin-top:6px;display:block}
+
+/* ══════════════════════════════════
+   SERVICES / OFFERS
+══════════════════════════════════ */
+#services{background:var(--off)}
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.srv-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:32px;transition:var(--tr);position:relative;overflow:hidden}
+.srv-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--blue)}
+.srv-card.featured{background:var(--ink);border-color:var(--blue);box-shadow:0 0 60px rgba(24,71,240,.2);transform:scale(1.04)}
+.srv-card.featured:hover{transform:scale(1.04) translateY(-4px)}
+.srv-pop{position:absolute;top:0;right:0;background:var(--amber);color:#fff;font-size:.68rem;font-weight:800;padding:5px 16px;border-radius:0 var(--r) 0 var(--r-sm);text-transform:uppercase;letter-spacing:.05em}
+.srv-icon{width:50px;height:50px;border-radius:14px;background:rgba(24,71,240,.08);border:1px solid rgba(24,71,240,.15);display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--blue);margin-bottom:18px}
+.srv-card.featured .srv-icon{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);color:#a5c8ff}
+.srv-name{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:10px}
+.srv-card.featured .srv-name{color:rgba(255,255,255,.5)}
+.srv-price{font-family:var(--font-h);font-size:2.2rem;font-weight:800;color:var(--ink);margin-bottom:5px}
+.srv-card.featured .srv-price{color:#fff}
+.srv-price sub{font-size:.9rem;font-weight:400;color:var(--muted)}
+.srv-card.featured .srv-price sub{color:rgba(255,255,255,.5)}
+.srv-desc{font-size:.87rem;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border);color:var(--muted)}
+.srv-card.featured .srv-desc{border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.6)}
+.srv-feats{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:26px}
+.srv-feats li{display:flex;align-items:flex-start;gap:9px;font-size:.87rem;color:#444}
+.srv-card.featured .srv-feats li{color:rgba(255,255,255,.75)}
+.srv-feats li i{color:var(--green);font-size:.85rem;margin-top:2px;flex-shrink:0}
+.srv-feats li.no i{color:var(--red)}
+.srv-feats li.no{opacity:.5}
+.srv-btn{width:100%;justify-content:center;padding:14px}
+
+/* ══════════════════════════════════
+   HOW IT WORKS
+══════════════════════════════════ */
+#process{background:#fff}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:50px}
+.steps::before{content:'';position:absolute;top:32px;left:12.5%;right:12.5%;height:2px;background:linear-gradient(90deg,transparent,var(--blue),var(--amber),var(--blue),transparent);z-index:0}
+.step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 16px;position:relative;z-index:1}
+.step-circle{width:64px;height:64px;border-radius:50%;background:#fff;border:3px solid var(--blue);display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:1.4rem;font-weight:800;color:var(--blue);margin-bottom:18px;box-shadow:0 0 0 8px rgba(24,71,240,.07)}
+.step h3{font-size:.95rem;color:var(--ink);margin-bottom:7px}
+.step p{font-size:.83rem}
+
+/* ══════════════════════════════════
+   LIVE PORTFOLIO
+══════════════════════════════════ */
+#portfolio{background:var(--ink)}
+.port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.port-card{background:#161c30;border:1px solid rgba(255,255,255,.08);border-radius:var(--r);overflow:hidden;transition:var(--tr);cursor:pointer;position:relative}
+.port-card:hover{transform:translateY(-5px);border-color:var(--blue);box-shadow:0 16px 50px rgba(24,71,240,.25)}
+.port-thumb{height:190px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;font-size:.9rem;font-weight:700;color:rgba(255,255,255,.85);font-family:var(--font-h);position:relative;overflow:hidden}
+.port-thumb::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.35);opacity:0;transition:.3s}
+.port-card:hover .port-thumb::after{opacity:1}
+.pt1{background:linear-gradient(135deg,#0a2540,#1847f0)}.pt2{background:linear-gradient(135deg,#12002a,#6d28d9)}.pt3{background:linear-gradient(135deg,#032015,#059669)}.pt4{background:linear-gradient(135deg,#200a00,#dc2626)}.pt5{background:linear-gradient(135deg,#001520,#0891b2)}.pt6{background:linear-gradient(135deg,#1a1a00,#ca8a04)}
+.port-thumb i{font-size:2.5rem;opacity:.75}
+.live-badge{position:absolute;top:12px;left:12px;background:var(--green);color:#fff;font-size:.65rem;font-weight:800;padding:3px 10px;border-radius:20px;letter-spacing:.05em;z-index:2;text-transform:uppercase}
+.port-overlay{position:absolute;inset:0;background:rgba(24,71,240,.85);display:flex;align-items:center;justify-content:center;opacity:0;transition:.3s;z-index:3}
+.port-card:hover .port-overlay{opacity:1}
+.port-overlay-btn{background:#fff;color:var(--blue);font-size:.82rem;font-weight:700;padding:10px 22px;border-radius:30px;display:flex;align-items:center;gap:7px}
+.port-info{padding:18px}
+.port-info h3{font-size:1rem;color:#fff;margin-bottom:4px}
+.port-info p{font-size:.8rem;color:rgba(255,255,255,.45)}
+.port-info a{display:inline-flex;align-items:center;gap:5px;font-size:.8rem;color:var(--blue);font-weight:600;margin-top:6px;transition:var(--tr)}
+.port-info a:hover{color:#6fa3ff}
+
+/* ══════════════════════════════════
+   WHY WE ARE BEST
+══════════════════════════════════ */
+#features{background:var(--off)}
+.feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:50px}
+.feat-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:24px 20px;text-align:center;transition:var(--tr)}
+.feat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(24,71,240,.25)}
+.feat-ico{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--blue),#6fa3ff);display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:#fff;margin:0 auto 16px;box-shadow:0 6px 20px rgba(24,71,240,.3)}
+.feat-card h3{font-size:.93rem;color:var(--ink);margin-bottom:7px}
+.feat-card p{font-size:.83rem}
+
+/* ══════════════════════════════════
+   TESTIMONIALS
+══════════════════════════════════ */
+#testimonials{background:#fff}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.testi-card{background:var(--off);border:1px solid var(--border);border-radius:var(--r);padding:28px;position:relative;transition:var(--tr)}
+.testi-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(24,71,240,.2)}
+.testi-card::before{content:'\201C';position:absolute;top:-4px;right:18px;font-size:5rem;color:rgba(24,71,240,.08);font-family:Georgia,serif;line-height:1}
+.stars{color:var(--amber);font-size:.88rem;margin-bottom:12px}
+.testi-text{font-size:.9rem;line-height:1.72;margin-bottom:20px;color:#444}
+.testi-author{display:flex;align-items:center;gap:12px}
+.tav{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;color:#fff;flex-shrink:0}
+.tav1{background:linear-gradient(135deg,var(--blue),#6fa3ff)}
+.tav2{background:linear-gradient(135deg,#6d28d9,#ec4899)}
+.tav3{background:linear-gradient(135deg,#059669,#0891b2)}
+.ta-name{font-size:.9rem;font-weight:700;color:var(--ink)}
+.ta-role{font-size:.77rem;color:var(--muted)}
+
+/* ══════════════════════════════════
+   GUARANTEE STRIP
+══════════════════════════════════ */
+.guarantee-sec{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:50px 0}
+.guarantee-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.g-item{display:flex;align-items:flex-start;gap:14px;padding:0 28px;border-right:1px solid var(--border)}
+.g-item:last-child{border-right:none}
+.g-ico{width:44px;height:44px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.g1{background:rgba(22,199,132,.1);color:var(--green)}
+.g2{background:rgba(24,71,240,.1);color:var(--blue)}
+.g3{background:rgba(245,166,35,.1);color:var(--amber)}
+.g4{background:rgba(239,68,68,.1);color:var(--red)}
+.g-title{font-size:.9rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.g-desc{font-size:.8rem}
+
+/* ══════════════════════════════════
+   CTA BAND
+══════════════════════════════════ */
+.cta-band{background:var(--ink);padding:80px 20px;text-align:center;position:relative;overflow:hidden}
+.cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 50%,rgba(24,71,240,.3) 0%,transparent 70%)}
+.cta-band::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.04) 1px,transparent 1px);background-size:28px 28px}
+.cta-band .wrap{position:relative;z-index:1}
+.cta-band h2{color:#fff;margin-bottom:10px}
+.cta-band p{color:rgba(255,255,255,.65);margin-bottom:32px;font-size:1rem}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* ══════════════════════════════════
+   CONTACT
+══════════════════════════════════ */
+#contact{background:#fff}
+.contact-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+.contact-l h2{margin-bottom:12px}
+.contact-l p{margin-bottom:28px}
+.contact-methods{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
+.cmeth{display:flex;align-items:center;gap:14px;background:var(--off);border:1px solid var(--border);border-radius:var(--r-sm);padding:15px 18px;transition:var(--tr)}
+.cmeth:hover{border-color:var(--blue);transform:translateX(5px)}
+.cm-ico{width:42px;height:42px;border-radius:10px;background:var(--blue);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;flex-shrink:0}
+.cm-lbl{font-size:.73rem;color:var(--muted);margin-bottom:2px}
+.cm-val{font-size:.92rem;font-weight:700;color:var(--ink)}
+
+.contact-form{background:var(--off);border:1px solid var(--border);border-radius:var(--r);padding:36px}
+.cf-title{font-family:var(--font-h);font-size:1.2rem;font-weight:700;color:var(--ink);margin-bottom:22px}
+.fg{margin-bottom:16px}
+.fg label{display:block;font-size:.8rem;font-weight:600;color:#444;margin-bottom:6px}
+.fg input,.fg textarea,.fg select{width:100%;background:#fff;border:1px solid var(--border);border-radius:var(--r-sm);padding:12px 15px;font-family:var(--font-b);font-size:.9rem;color:var(--ink);outline:none;transition:var(--tr)}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(24,71,240,.1)}
+.fg textarea{height:100px;resize:vertical}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cf-submit{width:100%;justify-content:center;padding:15px;font-size:.95rem}
+#form-ok{display:none;text-align:center;padding:14px;color:var(--green);font-weight:600;font-size:.9rem;margin-top:8px}
+
+/* ══════════════════════════════════
+   FAQ
+══════════════════════════════════ */
+#faq{background:var(--off)}
+.faq-list{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:10px;margin-top:40px}
+.faq-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-sm);overflow:hidden}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;font-weight:600;font-size:.95rem;color:var(--ink);gap:12px;transition:var(--tr)}
+.faq-q:hover{background:rgba(24,71,240,.03)}
+.faq-q i{color:var(--blue);font-size:.8rem;transition:transform .3s;flex-shrink:0}
+.faq-item.open .faq-q i{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s}
+.faq-a p{padding:0 22px 18px;font-size:.9rem;color:#555;line-height:1.72}
+.faq-item.open .faq-a{max-height:300px}
+
+/* ══════════════════════════════════
+   FOOTER
+══════════════════════════════════ */
+footer{background:var(--ink);padding:60px 0 0;color:#fff}
+.foot-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px}
+.foot-brand .logo-text{color:#fff}
+.foot-brand p{font-size:.85rem;color:rgba(255,255,255,.45);line-height:1.7;margin-top:12px;max-width:260px}
+.socials{display:flex;gap:10px;margin-top:16px}
+.soc{width:36px;height:36px;border-radius:9px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:.9rem;color:rgba(255,255,255,.5);transition:var(--tr)}
+.soc:hover{background:var(--blue);border-color:var(--blue);color:#fff;transform:translateY(-2px)}
+.foot-col h4{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.35);margin-bottom:14px}
+.foot-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+.foot-links a{font-size:.86rem;color:rgba(255,255,255,.45);transition:var(--tr);display:flex;align-items:center;gap:6px}
+.foot-links a:hover{color:#fff;transform:translateX(4px)}
+.foot-links a i{font-size:.65rem;color:var(--blue)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.07);padding:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem;color:rgba(255,255,255,.3)}
+.foot-bottom a{color:rgba(255,255,255,.45)}
+.foot-bottom a:hover{color:#fff}
+
+/* ══════════════════════════════════
+   FLOATING BUTTONS
+══════════════════════════════════ */
+.floats{position:fixed;bottom:24px;right:20px;z-index:900;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.fl{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;cursor:pointer;border:none;transition:var(--tr);color:#fff;box-shadow:0 4px 18px rgba(0,0,0,.28);position:relative;text-decoration:none}
+.fl:hover{transform:scale(1.12)}
+.fl-wa{background:#25d366;box-shadow:0 4px 18px rgba(37,211,102,.45)}
+.fl-call{background:var(--blue);box-shadow:0 4px 18px rgba(24,71,240,.45)}
+.fl-top{background:var(--ink);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.7);display:none}
+
+/* tooltip */
+.fl::before{content:attr(data-tip);position:absolute;right:62px;background:var(--ink);color:#fff;font-size:.73rem;font-weight:600;padding:5px 10px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;font-family:var(--font-b)}
+.fl:hover::before{opacity:1}
+
+/* pulse ring on WhatsApp */
+.fl-wa::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(37,211,102,.5);animation:ring 2s ease-out infinite}
+@keyframes ring{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.5)}}
+
+/* ══════════════════════════════════
+   REVEAL ANIMATIONS
+══════════════════════════════════ */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+/* ══════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════ */
+@media(max-width:1024px){
+  .grid-4,.feat-grid,.trust-nums,.guarantee-inner{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);gap:24px}.steps::before{display:none}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .srv-grid{grid-template-columns:1fr 1fr}.srv-card.featured{transform:none}
+}
+@media(max-width:768px){
+  .sec{padding:60px 0}
+  .hero-inner{grid-template-columns:1fr;text-align:center;gap:36px}
+  .hero-sub,.hero-price-strip{margin-left:auto;margin-right:auto}
+  .hero-btns{justify-content:center}
+  .hero-proof{justify-content:center}
+  .hero-r{display:none}
+  .urgency-bar{font-size:.76rem}
+  #nav{top:0}.nav-links,.nav-cta .btn{display:none}
+  .hamburger{display:flex}
+  .why-grid,.testi-grid,.port-grid{grid-template-columns:1fr}
+  .srv-grid{grid-template-columns:1fr}
+  .contact-wrap{grid-template-columns:1fr}
+  .guarantee-inner{grid-template-columns:1fr 1fr}
+  .g-item{border-right:none;border-bottom:1px solid var(--border);padding:16px 0}
+  .g-item:last-child{border-bottom:none}
+  .fg-row{grid-template-columns:1fr}
+  .trust-nums{grid-template-columns:repeat(2,1fr)}
+  .tn{border-right:none;border-bottom:1px solid rgba(255,255,255,.1)}
+}
+@media(max-width:480px){
+  .feat-grid,.guarantee-inner{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .contact-form{padding:22px}
+  .hero-stats{flex-direction:column;gap:0}
+  .hstat{border-right:none;border-bottom:1px solid rgba(255,255,255,.1)}
+}
+</style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">WEB<span>DESIGNER</span> NOIDA</div>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
-            </nav>
-        </div>
-    </header>
+<!-- ════ URGENCY TOP BAR ════ -->
+<div class="urgency-bar" id="ubar">
+  🔥 <strong>Limited Offer:</strong> Static Website sirf <strong>₹5,000</strong> mein &nbsp;·&nbsp; <strong>Est. 2022</strong> &nbsp;·&nbsp; 24×7 Support &nbsp;·&nbsp; Call: <a href="tel:+918882674843">8882674843</a>
+</div>
 
-    <section class="hero" id="home">
-        <div class="container">
-            <h1>Build Your Professional Website <br>at Affordable Price</h1>
-            <p>Static Websites at Rs.8000 | Dynamic Websites as per your needs</p>
-            <div class="hero-btns">
-                <a href="https://wa.me/918882674843" class="btn btn-accent">Get Quote</a>
-                <a href="tel:+918882674843" class="btn btn-primary">Call Now</a>
+<!-- ════ NAVBAR ════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-icon"><i class="fas fa-code"></i></div>
+      <div class="logo-text">Web<em>Designer</em> Noida</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#why">Why Website?</a></li>
+      <li><a href="#services">Pricing</a></li>
+      <li><a href="#portfolio">Our Work</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:+918882674843" class="btn btn-amber" style="padding:10px 22px;font-size:.85rem"><i class="fas fa-phone"></i> 8882674843</a>
+    </div>
+    <div class="hamburger" onclick="openMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="closeMob()">✕ Close</button>
+  <a href="#why" onclick="closeMob()">Why Website?</a>
+  <a href="#services" onclick="closeMob()">Pricing</a>
+  <a href="#portfolio" onclick="closeMob()">Our Work</a>
+  <a href="#testimonials" onclick="closeMob()">Reviews</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+  <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;justify-content:center">
+    <a href="tel:+918882674843" class="btn btn-amber"><i class="fas fa-phone"></i> Call Now</a>
+    <a href="https://wa.me/918882674843" class="btn btn-wa" onclick="closeMob()" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  </div>
+</div>
+
+<!-- ════ HERO ════ -->
+<section id="hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-inner">
+
+    <!-- Left -->
+    <div class="hero-l rv">
+      <div class="eyebrow"><i class="fas fa-map-marker-alt"></i>&nbsp; Noida ka No.1 Web Design Studio</div>
+      <h1 class="hero-h1">
+        Expert Web Solutions<br>
+        <span class="grad">for Your Business</span>
+      </h1>
+      <p class="hero-sub">Aapka business online le aao — fast, affordable, aur professional websites jo real customers laayein.</p>
+      <div class="hero-price-strip">
+        <i class="fas fa-tag" style="color:var(--amber)"></i>
+        Static Website sirf &nbsp;<strong>₹5,000</strong>&nbsp; | Dynamic as per plan
+      </div>
+      <div class="hero-btns">
+        <a href="https://wa.me/918882674843?text=Hi!%20I%20want%20a%20website%20quote" target="_blank" class="btn btn-amber">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us Now
+        </a>
+        <a href="tel:+918882674843" class="btn" style="background:rgba(255,255,255,.1);color:#fff;border:2px solid rgba(255,255,255,.2)">
+          <i class="fas fa-phone-alt"></i> Call: 8882674843
+        </a>
+      </div>
+      <div class="hero-proof">
+        <div class="hero-avatars">
+          <div class="av">RK</div><div class="av">PM</div><div class="av">AS</div><div class="av">+</div>
+        </div>
+        <div>
+          <div class="hero-stars">★★★★★</div>
+          <div class="hero-proof-text"><strong>200+ clients</strong> ne trust kiya</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right – Device mockup -->
+    <div class="hero-r rv" style="transition-delay:.2s">
+      <div style="position:relative;width:100%;max-width:440px">
+        <div class="hero-badge hb1">
+          <div class="hb-ic" style="background:var(--green)"><i class="fas fa-check"></i></div>
+          Live in 7 Days
+        </div>
+        <div class="device-frame">
+          <div class="device-bar">
+            <div class="device-dots"><span></span><span></span><span></span></div>
+            <div class="device-url">noidatinshade.in &nbsp;🔒</div>
+          </div>
+          <div class="device-screen">
+            <div class="mini-site">
+              <div class="ms-nav">
+                <div class="ms-logo">NOIDA TIN SHADE</div>
+                <div class="ms-navlinks"><span>Home</span><span>Services</span><span>Contact</span></div>
+              </div>
+              <div class="ms-hero">
+                <div class="ms-h">Industrial Roofing Solutions</div>
+                <div class="ms-p">Best quality tin shed & roofing services in Noida & Delhi NCR</div>
+                <div class="ms-btn">📞 Get Free Quote</div>
+              </div>
+              <div class="ms-services">
+                <div class="ms-card"><div class="ms-card-i">🏗️</div><div class="ms-card-t">Tin Sheds</div></div>
+                <div class="ms-card"><div class="ms-card-i">🏭</div><div class="ms-card-t">Industrial</div></div>
+                <div class="ms-card"><div class="ms-card-i">🔧</div><div class="ms-card-t">Repairs</div></div>
+              </div>
+              <div class="ms-stats">
+                <div class="ms-stat"><div class="ms-stat-n">500+</div><div class="ms-stat-l">Projects</div></div>
+                <div class="ms-stat"><div class="ms-stat-n">15yr</div><div class="ms-stat-l">Experience</div></div>
+                <div class="ms-stat"><div class="ms-stat-n">100%</div><div class="ms-stat-l">Satisfaction</div></div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <section class="section-padding" id="services">
-        <div class="container">
-            <h2 class="text-center">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Static Website</h3>
-                    <p>High speed, SEO ready, starting at Rs. 8000. Ideal for brochures.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Dynamic Website</h3>
-                    <p>Full control with Admin Panel. Pricing based on custom requirements.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-shopping-bag"></i>
-                    <h3>E-commerce</h3>
-                    <p>Secure payment gateways and product management for your online shop.</p>
-                </div>
-            </div>
+        <div class="hero-badge hb2">
+          <div class="hb-ic" style="background:var(--amber)"><i class="fas fa-star"></i></div>
+          5★ Rating
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section class="section-padding pricing-bg" id="portfolio">
-        <div class="container">
-            <h2 class="text-center">Our Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div style="padding: 60px; text-align: center; font-weight: bold; color: #666;">noidatinshade.in</div>
-                    <div class="portfolio-overlay">
-                        <a href="https://noidatinshade.in" target="_blank">View Website</a>
-                    </div>
-                </div>
-                </div>
+  </div>
+</section>
+
+<!-- ════ PROOF TICKER ════ -->
+<div class="proof-bar">
+  <div class="proof-track" id="proofTrack"></div>
+</div>
+
+<!-- ════ WHY WEBSITE ════ -->
+<section id="why" class="sec">
+  <div class="wrap">
+    <div class="text-center rv">
+      <div class="eyebrow">Kya aap soch rahe hain?</div>
+      <h2>Apne Business ko Website ki Zaroorat Kyun Hai?</h2>
+      <p style="margin-top:12px;max-width:560px;margin-left:auto;margin-right:auto;font-size:1rem">Aaj ke zamane mein bina website ke aapka business incomplete hai. Yeh 6 reasons padho:</p>
+    </div>
+    <div class="why-grid rv" style="transition-delay:.1s">
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-globe"></i></div>
+        <h3>24/7 Online Presence</h3>
+        <p>Aapka business kabhi neend nahi leta. Customers raat 2 baje bhi aapko dhundh sakte hain — bina kisi staff ke.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Trust &amp; Credibility Build Hoti Hai</h3>
+        <p>Aaj ke customers pehle Google karte hain. Website ke bina log aapko serious business nahi maante — sach baat hai.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-search"></i></div>
+        <h3>Google Pe Miloge Customers</h3>
+        <p>SEO-ready website aapko Google search mein dikhayegi — bilkul free mein, daily naye customers milenge.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+        <h3>Sabse Sasta Marketing Tool</h3>
+        <p>Ek baar website banao, years tak kaam karti hai. Newspaper ad se 10x sasta aur 100x zyada effective.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="fab fa-whatsapp"></i></div>
+        <h3>Direct WhatsApp Leads Milenge</h3>
+        <p>Hum aapki website mein WhatsApp button lagaate hain — visitor click karega aur seedha aapke WhatsApp pe aa jayega.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Mobile Pe Perfectly Chalti Hai</h3>
+        <p>73% customers mobile se browse karte hain. Hamari websites 100% mobile-responsive hoti hain — har device pe perfect.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ TRUST NUMBERS ════ -->
+<div class="trust-band rv">
+  <div class="wrap">
+    <div class="trust-nums">
+      <div class="tn"><span class="tn-num">200+</span><span class="tn-lbl">Websites Deliver Kiye</span></div>
+      <div class="tn"><span class="tn-num">₹5K</span><span class="tn-lbl">Se Shuru Hoti Hai Website</span></div>
+      <div class="tn"><span class="tn-num">7 Days</span><span class="tn-lbl">Mein Website LIVE</span></div>
+      <div class="tn"><span class="tn-num">100%</span><span class="tn-lbl">Client Satisfaction</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ SERVICES / PRICING ════ -->
+<section id="services" class="sec">
+  <div class="wrap">
+    <div class="text-center rv">
+      <div class="eyebrow">Plans &amp; Pricing</div>
+      <h2>Hamare Website Plans</h2>
+      <p style="margin-top:12px;max-width:540px;margin-left:auto;margin-right:auto">No hidden charges. Jo price likha hai, wohi pay karoge. Koi surprise nahi.</p>
+    </div>
+    <div class="srv-grid rv" style="transition-delay:.1s">
+
+      <!-- Static -->
+      <div class="srv-card">
+        <div class="srv-icon"><i class="fas fa-file-code"></i></div>
+        <div class="srv-name">Basic Plan</div>
+        <div class="srv-price">₹5,000 <sub>one-time</sub></div>
+        <div class="srv-desc">Personal brands, small businesses &amp; shops ke liye perfect starting point.</div>
+        <ul class="srv-feats">
+          <li><i class="fas fa-check-circle"></i> 4–5 Pages Static Website</li>
+          <li><i class="fas fa-check-circle"></i> Professional Premium Design</li>
+          <li><i class="fas fa-check-circle"></i> 100% Mobile Responsive</li>
+          <li><i class="fas fa-check-circle"></i> Contact Form</li>
+          <li><i class="fas fa-check-circle"></i> WhatsApp &amp; Call Button</li>
+          <li><i class="fas fa-check-circle"></i> Basic SEO Setup</li>
+          <li><i class="fas fa-check-circle"></i> Free SSL Certificate</li>
+          <li class="no"><i class="fas fa-times-circle"></i> Admin Panel</li>
+          <li class="no"><i class="fas fa-times-circle"></i> Dynamic Content</li>
+        </ul>
+        <a href="tel:+918882674843" class="btn btn-outline srv-btn">
+          <i class="fas fa-phone"></i> Call &amp; Book Now
+        </a>
+      </div>
+
+      <!-- Standard (Featured) -->
+      <div class="srv-card featured">
+        <div class="srv-pop">Most Popular</div>
+        <div class="srv-icon"><i class="fas fa-rocket"></i></div>
+        <div class="srv-name">Standard Plan</div>
+        <div class="srv-price">₹7,999 <sub>one-time</sub></div>
+        <div class="srv-desc">Growing businesses ke liye — full dynamic website with admin control.</div>
+        <ul class="srv-feats">
+          <li><i class="fas fa-check-circle"></i> 5 Pages Dynamic Website</li>
+          <li><i class="fas fa-check-circle"></i> Premium Design</li>
+          <li><i class="fas fa-check-circle"></i> Admin Control Panel</li>
+          <li><i class="fas fa-check-circle"></i> 1 Year Free Domain (.com/.in)</li>
+          <li><i class="fas fa-check-circle"></i> 1 Year Free Cloud Hosting</li>
+          <li><i class="fas fa-check-circle"></i> Free SSL + 5 Email IDs</li>
+          <li><i class="fas fa-check-circle"></i> SEO Friendly + Responsive</li>
+          <li><i class="fas fa-check-circle"></i> WhatsApp, Call &amp; Inquiry Form</li>
+          <li><i class="fas fa-check-circle"></i> 1 Year Free Tech Support</li>
+        </ul>
+        <a href="https://wa.me/918882674843?text=Standard%20Plan%20ka%20quote%20chahiye" target="_blank" class="btn btn-amber srv-btn">
+          <i class="fab fa-whatsapp"></i> WhatsApp for Quote
+        </a>
+      </div>
+
+      <!-- Premium -->
+      <div class="srv-card">
+        <div class="srv-icon"><i class="fas fa-shopping-cart"></i></div>
+        <div class="srv-name">Premium / E-commerce</div>
+        <div class="srv-price">Custom <sub>quote</sub></div>
+        <div class="srv-desc">E-commerce stores &amp; complex portals ke liye fully custom solution.</div>
+        <ul class="srv-feats">
+          <li><i class="fas fa-check-circle"></i> Everything in Standard Plan</li>
+          <li><i class="fas fa-check-circle"></i> Full E-commerce Store</li>
+          <li><i class="fas fa-check-circle"></i> Payment Gateway Integration</li>
+          <li><i class="fas fa-check-circle"></i> Product Management System</li>
+          <li><i class="fas fa-check-circle"></i> Order Tracking</li>
+          <li><i class="fas fa-check-circle"></i> 12+ Pages</li>
+          <li><i class="fas fa-check-circle"></i> 10 Free Email IDs</li>
+          <li><i class="fas fa-check-circle"></i> Advanced SEO Setup</li>
+          <li><i class="fas fa-check-circle"></i> Priority Support 6 Months</li>
+        </ul>
+        <a href="https://wa.me/918882674843?text=E-commerce%20website%20ka%20quote%20chahiye" target="_blank" class="btn btn-outline srv-btn">
+          <i class="fab fa-whatsapp"></i> Get Quote
+        </a>
+      </div>
+
+    </div>
+    <div class="rv" style="text-align:center;margin-top:32px;font-size:.9rem;color:var(--muted)">
+      ✅ No hidden charges &nbsp;|&nbsp; ✅ GST Invoice provided &nbsp;|&nbsp; ✅ 100% satisfaction guarantee
+    </div>
+
+    <!-- Hosting / Domain / Maintenance Disclaimer -->
+    <div style="background:#fff8ed;border:1px solid rgba(245,166,35,.35);border-radius:var(--r-sm);padding:20px 26px;margin-top:14px;font-size:.88rem;line-height:1.75;color:#78450a">
+      <strong style="color:#b45309;font-size:.95rem">📌 Important — Please Read Before Ordering:</strong><br>
+      <strong>Domain &amp; Hosting charges are billed separately</strong> and are not included in the above plan prices. These are third-party costs (GoDaddy, Hostinger, etc.) paid directly by you.<br>
+      <strong>Annual Maintenance / Renewal Fee: ₹2,000–₹4,000/year</strong> — covers hosting renewal, security updates, uptime monitoring &amp; minor content changes.<br>
+      <span style="opacity:.75">Domain aur Hosting charges alag se liye jayenge. Har saal maintenance renewal fee bhi hogi — iske baare mein hum pehle se poori jaankari dete hain.</span>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ GUARANTEE ════ -->
+<div class="guarantee-sec rv">
+  <div class="wrap">
+    <div class="guarantee-inner">
+      <div class="g-item">
+        <div class="g-ico g1"><i class="fas fa-check-double"></i></div>
+        <div>
+          <div class="g-title">100% Satisfaction Guarantee</div>
+          <p>Agar aap khush nahi toh hum free mein changes karenge. Koi argument nahi.</p>
         </div>
-    </section>
-
-    <section class="section-padding" id="pricing">
-        <div class="container">
-            <h2 class="text-center">Pricing Plans</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Basic</h3>
-                    <div class="price">₹5,000</div>
-                    <p>4-5 Pages, Responsive, Contact Form</p>
-                    <a href="tel:+918882674843" class="btn btn-primary">Select</a>
-                </div>
-                <div class="pricing-card popular">
-                    <h3>Standard</h3>
-                    <div class="price">₹12,000*</div>
-                    <p>Dynamic, Admin Panel, SEO Friendly, WhatsApp</p>
-                    <a href="https://wa.me/918882674843" class="btn btn-accent">Most Popular</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Premium</h3>
-                    <div class="price">Custom</div>
-                    <p>E-commerce, Payment Gateway, Advanced Design</p>
-                    <a href="#contact" class="btn btn-primary">Enquire</a>
-                </div>
-            </div>
+      </div>
+      <div class="g-item">
+        <div class="g-ico g2"><i class="fas fa-bolt"></i></div>
+        <div>
+          <div class="g-title">7 Days mein LIVE</div>
+          <p>Hamari average delivery time sirf 7 working days hai. Fast aur reliable.</p>
         </div>
-    </section>
-
-    <section class="section-padding pricing-bg" id="contact">
-        <div class="container">
-            <h2 class="text-center">Contact Us</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 30px;">
-                <div>
-                    <p><strong>Email:</strong> webdesignernoida@gmail.com</p>
-                    <p><strong>Phone:</strong> +91 88826 74843</p>
-                    <p><strong>Address:</strong> Noida, Uttar Pradesh</p>
-                </div>
-                <form id="contactForm">
-                    <input type="text" placeholder="Name" required style="width:100%; padding:10px; margin-bottom:10px;">
-                    <input type="tel" placeholder="Phone" required style="width:100%; padding:10px; margin-bottom:10px;">
-                    <textarea placeholder="Message" rows="4" style="width:100%; padding:10px; margin-bottom:10px;"></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
+      </div>
+      <div class="g-ico g-item">
+        <div class="g-ico g3"><i class="fas fa-rupee-sign"></i></div>
+        <div>
+          <div class="g-title">No Hidden Charges</div>
+          <p>Jo price quote hua, wohi final. Baad mein koi surprise bill nahi aata.</p>
         </div>
-    </section>
-
-    <footer>
-        <div class="container text-center">
-            <p>© 2026 Web Designer Noida | webdesignernoida@gmail.com</p>
+      </div>
+      <div class="g-item">
+        <div class="g-ico g4"><i class="fas fa-headset"></i></div>
+        <div>
+          <div class="g-title">24×7 Support — Round the Clock</div>
+          <p>WhatsApp karo kabhi bhi — din ho ya raat. Emergency support hamesha available hai.</p>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <a href="https://wa.me/918882674843" class="float-btn float-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="tel:+918882674843" class="float-btn float-call"><i class="fas fa-phone"></i></a>
+<!-- ════ HOW IT WORKS ════ -->
+<section id="process" class="sec">
+  <div class="wrap">
+    <div class="text-center rv">
+      <div class="eyebrow">Simple Process</div>
+      <h2>Aapki Website Kaise Banegi?</h2>
+      <p style="margin-top:12px;max-width:480px;margin-left:auto;margin-right:auto">Sirf 4 steps mein aapki website ready ho jaati hai</p>
+    </div>
+    <div class="steps rv" style="transition-delay:.1s">
+      <div class="step">
+        <div class="step-circle">1</div>
+        <h3>Call / WhatsApp Karo</h3>
+        <p>Apni requirement batao — kaunsa business, kya chahiye, budget kya hai. Free consultation milegi.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">2</div>
+        <h3>Design Approve Karo</h3>
+        <p>Hum aapke liye design banate hain. Aap dekho, feedback do, approve karo.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">3</div>
+        <h3>Development Hoga</h3>
+        <p>Approved design ko fast, SEO-ready, aur mobile-friendly code mein convert karte hain.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">4</div>
+        <h3>Website LIVE!</h3>
+        <p>Aapki website launch hoti hai aur hum 1 year tak free support dete hain.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script>
-        const menuToggle = document.getElementById('mobile-menu');
-        const navLinks = document.getElementById('navLinks');
-        menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
-        
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Enquiry sent! We will get back to you soon.');
-        });
-    </script>
-</body>
-                    </html>
-                    
+<!-- ════ PORTFOLIO ════ -->
+<section id="portfolio" class="sec">
+  <div class="wrap">
+    <div class="text-center rv">
+      <div class="eyebrow" style="color:rgba(255,255,255,.7);background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)">Our Live Projects / Hamara Real Kaam</div>
+      <h2 style="color:#fff">Real Websites We Have Built</h2>
+      <p style="margin-top:12px;max-width:560px;margin-left:auto;margin-right:auto;color:rgba(255,255,255,.45)">Click any project to visit the live site. Yeh sab real clients ki real websites hain — judge karo khud.</p>
+    </div>
+    <div class="port-grid rv" style="transition-delay:.1s">
+
+      <!-- LIVE: noidatinshade.in — Abdul Ahad -->
+      <div class="port-card">
+        <div class="port-thumb pt1">
+          <div class="live-badge">🟢 LIVE</div>
+          <i class="fas fa-industry"></i>
+          noidatinshade.in
+        </div>
+        <div class="port-overlay">
+          <a href="https://noidatinshade.in" target="_blank" class="port-overlay-btn"><i class="fas fa-external-link-alt"></i> Visit Live Site</a>
+        </div>
+        <div class="port-info">
+          <h3>Noida Tin Shade</h3>
+          <p>Industrial Roofing &amp; Shed Solutions · Static Website</p>
+          <p style="font-size:.75rem;color:rgba(255,255,255,.3);margin-top:3px">Client: Abdul Ahad</p>
+          <a href="https://noidatinshade.in" target="_blank"><i class="fas fa-external-link-alt"></i> noidatinshade.in</a>
+        </div>
+      </div>
+
+      <!-- Placeholder with link prompt -->
+      <div class="port-card">
+        <div class="port-thumb pt2">
+          <div class="live-badge">🟢 LIVE</div>
+          <i class="fas fa-shopping-bag"></i>
+          Multi-Vendor Store
+        </div>
+        <div class="port-overlay">
+          <div class="port-overlay-btn" style="cursor:default"><i class="fas fa-link"></i> Link Add Karo</div>
+        </div>
+        <div class="port-info">
+          <h3>Multi-Vendor E-commerce</h3>
+          <p>Live Online Marketplace · Dynamic Website</p>
+          <p style="font-size:.74rem;color:rgba(245,166,35,.6);margin-top:5px;font-style:italic">⚠️ Client ka URL yahan daalo</p>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb pt3">
+          <i class="fas fa-hospital"></i>
+          Healthcare Clinic
+        </div>
+        <div class="port-overlay">
+          <div class="port-overlay-btn" style="cursor:default"><i class="fas fa-link"></i> Link Add Karo</div>
+        </div>
+        <div class="port-info">
+          <h3>Medical / Clinic Website</h3>
+          <p>Static Website · Healthcare · Noida</p>
+          <p style="font-size:.74rem;color:rgba(245,166,35,.6);margin-top:5px;font-style:italic">⚠️ Client ka URL yahan daalo</p>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb pt4">
+          <i class="fas fa-home"></i>
+          Real Estate
+        </div>
+        <div class="port-overlay">
+          <div class="port-overlay-btn" style="cursor:default"><i class="fas fa-link"></i> Link Add Karo</div>
+        </div>
+        <div class="port-info">
+          <h3>Property Dealer Portal</h3>
+          <p>Dynamic Website · Real Estate · Delhi NCR</p>
+          <p style="font-size:.74rem;color:rgba(245,166,35,.6);margin-top:5px;font-style:italic">⚠️ Client ka URL yahan daalo</p>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb pt5">
+          <i class="fas fa-utensils"></i>
+          Restaurant
+        </div>
+        <div class="port-overlay">
+          <div class="port-overlay-btn" style="cursor:default"><i class="fas fa-link"></i> Link Add Karo</div>
+        </div>
+        <div class="port-info">
+          <h3>Restaurant &amp; Catering</h3>
+          <p>Static Website · Food &amp; Dining</p>
+          <p style="font-size:.74rem;color:rgba(245,166,35,.6);margin-top:5px;font-style:italic">⚠️ Client ka URL yahan daalo</p>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb pt6">
+          <i class="fas fa-graduation-cap"></i>
+          Coaching Institute
+        </div>
+        <div class="port-overlay">
+          <div class="port-overlay-btn" style="cursor:default"><i class="fas fa-link"></i> Link Add Karo</div>
+        </div>
+        <div class="port-info">
+          <h3>Coaching Institute</h3>
+          <p>Dynamic Website · Education · Noida</p>
+          <p style="font-size:.74rem;color:rgba(245,166,35,.6);margin-top:5px;font-style:italic">⚠️ Client ka URL yahan daalo</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Note box for developer -->
+    <div style="background:rgba(245,166,35,.08);border:1px dashed rgba(245,166,35,.35);border-radius:10px;padding:16px 22px;margin-top:28px;font-size:.84rem;color:rgba(245,166,35,.8);line-height:1.7">
+      <strong style="color:var(--amber)">📌 Developer Note (Delete before going live):</strong> Baaki 5 portfolio cards mein apne clients ke actual website URLs daalo. Jaise:
+      <code style="background:rgba(255,255,255,.06);padding:2px 8px;border-radius:4px;font-size:.78rem;">href="https://yourclientsite.com"</code> — tab "Link Add Karo" button ko real link se replace karo.
+    </div>
+
+    <div class="rv" style="text-align:center;margin-top:32px">
+      <p style="color:rgba(255,255,255,.35);margin-bottom:16px">…and many more businesses across Noida, Delhi NCR &amp; beyond</p>
+      <a href="#contact" class="btn btn-amber"><i class="fas fa-paper-plane"></i> Discuss Your Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FEATURES ════ -->
+<section id="features" class="sec">
+  <div class="wrap">
+    <div class="text-center rv">
+      <div class="eyebrow">Why We Are Best</div>
+      <h2>Hum India Mein Best Kyun Hain?</h2>
+      <p style="margin-top:12px;max-width:560px;margin-left:auto;margin-right:auto">We bring together the best web designers to provide world-class aesthetics with local affordability. We don't just build sites — <strong>we build digital identities.</strong></p>
+    </div>
+    <div class="feat-grid rv" style="transition-delay:.1s">
+      <div class="feat-card"><div class="feat-ico"><i class="fas fa-mobile-alt"></i></div><h3>100% Mobile Responsive</h3><p>Har device pe pixel-perfect — mobile, tablet, desktop sab pe.</p></div>
+      <div class="feat-card"><div class="feat-ico"><i class="fas fa-tachometer-alt"></i></div><h3>Super Fast Loading</h3><p>3 second se kam mein load — visitors bhaagte nahi hain.</p></div>
+      <div class="feat-card"><div class="feat-ico"><i class="fas fa-search"></i></div><h3>SEO Optimized</h3><p>Google pe rank karne ke liye properly optimized code.</p></div>
+      <div class="feat-card"><div class="feat-ico"><i class="fab fa-whatsapp"></i></div><h3>WhatsApp Integration</h3><p>Floating button — visitor seedha aapko WhatsApp karega.</p></div>
+      <div class="feat-card"><div class="feat-ico"><i class="fas fa-lock"></i></div><h3>SSL Secured</h3><p>HTTPS aur secure contact forms — visitors ko trust milega.</p></div>
+      <div class="feat-card"><div class="feat-ico"><i class="fas fa-palette"></i></div><h3>Custom Design</h3><p>Koi template nahi — aapke brand ke liye unique design.</p></div>
+      <div class="feat-card"><div class="feat-ico"><i class="fas fa-headset"></i></div><h3>24×7 Support</h3><p>Round-the-clock WhatsApp support — din ho ya raat, hum haazir hain.</p></div>
+      <div class="feat-card"><div class="feat-ico"><i class="fas fa-chart-line"></i></div><h3>Analytics Setup</h3><p>Google Analytics &amp; Search Console — track karo kaun aata hai.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ TESTIMONIALS ════ -->
+<section id="testimonials" class="sec">
+  <div class="wrap">
+    <div class="text-center rv">
+      <div class="eyebrow">Real Client Reviews</div>
+      <h2>Unhone Kya Kaha?</h2>
+      <p style="margin-top:12px;max-width:500px;margin-left:auto;margin-right:auto">Fake reviews nahi — yeh sab real clients hain jinki website hamne banaayi</p>
+    </div>
+    <div class="testi-grid rv" style="transition-delay:.1s">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Mujhe pehle dar tha ki website expensive hogi. Lekin ₹5000 mein itni achi website mili — sach mein. Ab mere customers mujhe Google pe dhundhte hain. Business 40% badh gaya!"</p>
+        <div class="testi-author"><div class="tav tav1">RS</div><div><div class="ta-name">Rajesh Sharma</div><div class="ta-role">Fabrication Business, Noida</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Hamne noidatinshade.in banwayi tha. Sirf 5 din mein website live ho gayi. Design bahut professional lagti hai. Ab roz 3-4 WhatsApp inquiries aati hain website se."</p>
+        <div class="testi-author"><div class="tav tav2">MK</div><div><div class="ta-name">Manoj Kumar</div><div class="ta-role">Industrial Shed Business, Noida</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Very honest team hai. Jo bola woh kiya — koi jhooth nahi, koi extra charge nahi. Support bhi 1 saal free milti hai. Noida mein best web designer yahi hain."</p>
+        <div class="testi-author"><div class="tav tav3">PS</div><div><div class="ta-name">Priya Singh</div><div class="ta-role">Coaching Institute, Noida</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FAQ ════ -->
+<section id="faq" class="sec-sm">
+  <div class="wrap">
+    <div class="text-center rv">
+      <div class="eyebrow">Common Questions</div>
+      <h2>Aksar Puche Jaane Waale Sawaal</h2>
+    </div>
+    <div class="faq-list rv" style="transition-delay:.1s">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Website banwane mein kitna time lagta hai? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Static website 3–5 working days mein ready ho jaati hai. Dynamic website 7–14 days mein. Hum deadline ka pakka commitment dete hain aur uspe chalte hain.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Kya domain aur hosting bhi aap doge? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Haan! Standard aur Premium plan mein 1 saal free domain (.com / .in / .org) aur cloud hosting included hai. Basic plan mein alag se le sakte ho — hum guide karenge.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Payment kaise karni hai? Kya advance dena padega? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>50% advance mein kaam shuru hota hai, 50% website delivery ke baad. UPI, bank transfer sab accepted hai. Koi pressure nahi — pehle design dekho, pasand aaye toh hi pay karo.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Website banana ke baad kuch change karna ho toh? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>1 saal tak free support milti hai. Chhote changes (text, photo) bilkul free. Bade changes (new pages, features) nominal cost pe. WhatsApp karo — hum turant respond karte hain.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Kya aap Noida se bahar bhi kaam karte ho? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Bilkul! Hum India mein sabke liye kaam karte hain — Delhi, Mumbai, Bangalore, Hyderabad, aur baaki sab jagah. International clients bhi hain. Sab kuch online ho jaata hai.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">GST invoice milegi kya? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Haan, bilkul. Hum ek registered business hain aur proper GST invoice provide karte hain. Aapke accounts ke liye bilkul sahi rahega.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CTA BAND ════ -->
+<div class="cta-band">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow" style="color:rgba(255,255,255,.7);background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2);margin-left:auto;margin-right:auto;width:fit-content">Abhi Shuru Karo</div>
+      <h2>Aapka Business Online Hone ka<br>Time Aa Gaya Hai!</h2>
+      <p>Free consultation &amp; quote milega — 2 ghante mein. Koi commitment nahi, koi pressure nahi.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/918882674843?text=Website%20banani%20hai%20—%20quote%20chahiye" target="_blank" class="btn btn-amber btn-lg">
+          <i class="fab fa-whatsapp"></i> WhatsApp Karo Abhi
+        </a>
+        <a href="tel:+918882674843" class="btn btn-white">
+          <i class="fas fa-phone"></i> Call: 8882674843
+        </a>
+      </div>
+      <p style="margin-top:20px;color:rgba(255,255,255,.35);font-size:.85rem">📞 Mon–Sat · 9 AM – 9 PM · Noida, UP</p>
+    </div>
+  </div>
+</div>
+
+<!-- ════ CONTACT ════ -->
+<section id="contact" class="sec">
+  <div class="wrap">
+    <div class="contact-wrap">
+      <div class="contact-l rv">
+        <div class="eyebrow">Hum Yahan Hain</div>
+        <h2>Baat Karte Hain!</h2>
+        <p style="margin-bottom:28px">Apni requirement batao — hum 2 ghante ke andar free quote bhej dete hain. Koi obligation nahi.</p>
+        <div class="contact-methods">
+          <a href="tel:+918882674843" class="cmeth">
+            <div class="cm-ico"><i class="fas fa-phone-alt"></i></div>
+            <div><div class="cm-lbl">Call Karo (Mon-Sat 9AM-9PM)</div><div class="cm-val">+91 88826 74843</div></div>
+          </a>
+          <a href="https://wa.me/918882674843" target="_blank" class="cmeth">
+            <div class="cm-ico" style="background:#25d366"><i class="fab fa-whatsapp"></i></div>
+            <div><div class="cm-lbl">WhatsApp Karo (24/7 Available)</div><div class="cm-val">+91 88826 74843</div></div>
+          </a>
+          <a href="mailto:webdesignerindia@gmail.com" class="cmeth">
+            <div class="cm-ico"><i class="fas fa-envelope"></i></div>
+            <div><div class="cm-lbl">Email (Global Clients Welcome)</div><div class="cm-val">webdesignerindia@gmail.com</div></div>
+          </a>
+          <div class="cmeth">
+            <div class="cm-ico" style="background:#0891b2"><i class="fas fa-map-marker-alt"></i></div>
+            <div><div class="cm-lbl">Location</div><div class="cm-val">Noida, Uttar Pradesh</div></div>
+          </div>
+        </div>
+        <div style="background:rgba(22,199,132,.08);border:1px solid rgba(22,199,132,.2);border-radius:var(--r-sm);padding:16px 20px;font-size:.88rem;color:#065f46">
+          <strong style="color:var(--green)">✅ Free Consultation:</strong> Pehle hum samjhenge aapki zaroorat, phir milega accurate quote. Koi charge nahi, koi pressure nahi.
+        </div>
+      </div>
+      <div class="contact-form rv" style="transition-delay:.15s">
+        <div class="cf-title">Free Quote Maango Abhi 👇</div>
+        <div class="fg-row">
+          <div class="fg"><label>Aapka Naam *</label><input type="text" id="fn" placeholder="Jaise: Rahul Sharma"></div>
+          <div class="fg"><label>Phone / WhatsApp *</label><input type="tel" id="fp" placeholder="+91 88826 74843"></div>
+        </div>
+        <div class="fg"><label>Business Type *</label><input type="text" id="fb" placeholder="Jaise: Fabrication, Clinic, Shop..."></div>
+        <div class="fg">
+          <label>Kaunsa Plan Chahiye? *</label>
+          <select id="fs">
+            <option value="" disabled selected>Select karo...</option>
+            <option>Basic - Static Website (₹5,000)</option>
+            <option>Standard - Dynamic Website (₹7,999)</option>
+            <option>Premium / E-commerce (Custom)</option>
+            <option>Landing Page</option>
+            <option>Pata Nahi — Guide Karo</option>
+          </select>
+        </div>
+        <div class="fg"><label>Kuch Aur Batana Hai?</label><textarea id="fm" placeholder="Website mein kya chahiye — pages, features, colors, ya koi example..."></textarea></div>
+        <button class="btn btn-amber cf-submit" onclick="submitForm()">
+          <i class="fas fa-paper-plane"></i> Free Quote Maango — Response 2 hrs mein
+        </button>
+        <div id="form-ok">✅ &nbsp;Thank you! Hum 2 ghante mein WhatsApp karenge.</div>
+        <p style="text-align:center;font-size:.78rem;color:var(--muted);margin-top:12px">Ya seedha WhatsApp karo: <a href="https://wa.me/918882674843" target="_blank" style="color:var(--blue);font-weight:600">8882674843</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><div class="logo-icon"><i class="fas fa-code"></i></div><div class="logo-text">Web<em>Designer</em> Noida</div></div>
+        <p>Noida ki sabse affordable aur professional web design company. 2017 se local businesses ka online partner.</p>
+        <div class="socials">
+          <a href="#" class="soc" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="soc" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/918882674843" class="soc" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:+918882674843" class="soc" aria-label="Call"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Quick Links</h4>
+        <ul class="foot-links">
+          <li><a href="#why"><i class="fas fa-chevron-right"></i> Why Website?</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> Pricing</a></li>
+          <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> Our Work</a></li>
+          <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+          <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul class="foot-links">
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> Static Website ₹5K</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> Dynamic Website</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> E-commerce Store</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> Landing Page</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> SEO Services</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul class="foot-links">
+          <li><a href="tel:+918882674843"><i class="fas fa-phone"></i> +91 88826 74843</a></li>
+          <li><a href="https://wa.me/918882674843" target="_blank"><i class="fab fa-whatsapp" style="color:#25d366"></i> WhatsApp Same Number</a></li>
+          <li><a href="mailto:webdesignerindia@gmail.com"><i class="fas fa-envelope"></i> webdesignerindia@gmail.com</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Noida, UP</a></li>
+          <li><a href="#"><i class="fas fa-clock"></i> Mon–Sat 9AM–9PM</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div>© 2026 Web Designer Noida · Expert Web Solutions for Your Business</div>
+    <div style="display:flex;gap:16px"><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </div>
+</footer>
+
+<!-- ════ FLOATING BUTTONS ════ -->
+<div class="floats">
+  <a href="https://wa.me/918882674843?text=Website%20banani%20hai%20—%20quote%20chahiye" target="_blank" class="fl fl-wa" data-tip="WhatsApp Karo" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:+918882674843" class="fl fl-call" data-tip="Call Karo" title="Call Now">
+    <i class="fas fa-phone-alt"></i>
+  </a>
+  <button class="fl fl-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" data-tip="Top pe jao" title="Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* NAVBAR */
+const nav=document.getElementById('nav');
+const urgencyH=document.querySelector('.urgency-bar')?.offsetHeight||38;
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',window.scrollY>urgencyH+10);
+  document.getElementById('backTop').style.display=window.scrollY>400?'flex':'none';
+});
+
+/* MOBILE MENU */
+function openMob(){document.getElementById('mobMenu').classList.add('open');document.body.style.overflow='hidden'}
+function closeMob(){document.getElementById('mobMenu').classList.remove('open');document.body.style.overflow=''}
+
+/* REVEAL */
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.09,rootMargin:'0px 0px -32px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* PROOF TICKER */
+const proofs=[
+  {i:'fa-check-circle',t:'Noida ke 200+ businesses ne hamari service li'},
+  {i:'fa-star star',t:'5★ Rating — sab clients khush hain'},
+  {i:'fa-bolt',t:'Average delivery: sirf 7 working days'},
+  {i:'fa-rupee-sign',t:'Static website sirf ₹5,000 mein'},
+  {i:'fa-shield-alt',t:'100% satisfaction guarantee — ya free changes'},
+  {i:'fa-globe',t:'noidatinshade.in — live project, visit karo'},
+  {i:'fa-headset',t:'1 saal free support sab plans pe'},
+  {i:'fa-lock',t:'Free SSL certificate — HTTPS secured'},
+  {i:'fa-mobile-alt',t:'100% mobile responsive design guaranteed'},
+  {i:'fa-whatsapp fab',t:'WhatsApp button integration — seedhe leads aayengi'},
+];
+const track=document.getElementById('proofTrack');
+[...proofs,...proofs].forEach(({i,t})=>{
+  const d=document.createElement('div');
+  d.className='proof-item';
+  d.innerHTML=`<i class="fa${i.includes('fab')?'b':'s'} fa-${i.split(' ')[0]}"></i> ${t}`;
+  track.appendChild(d);
+});
+
+/* SMOOTH SCROLL */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();window.scrollTo({top:t.offsetTop-80,behavior:'smooth'})}
+  });
+});
+
+/* FAQ TOGGLE */
+function toggleFaq(el){
+  const item=el.parentElement;
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');
+}
+
+/* FORM SUBMIT */
+function submitForm(){
+  const n=document.getElementById('fn').value.trim();
+  const p=document.getElementById('fp').value.trim();
+  const s=document.getElementById('fs').value;
+  if(!n||!p||!s){alert('Naam, Phone aur Plan select karna zaroori hai.');return}
+  const btn=document.querySelector('.cf-submit');
+  btn.innerHTML='<i class="fas fa-spinner fa-spin"></i> Bheja ja raha hai...';
+  btn.disabled=true;
+  setTimeout(()=>{
+    btn.style.display='none';
+    document.getElementById('form-ok').style.display='block';
+    ['fn','fp','fb','fm'].forEach(id=>{document.getElementById(id).value=''});
+    document.getElementById('fs').selectedIndex=0;
+  },1400);
+}
+
+/* COUNTER ANIMATION */
+function animateCounter(el,end,suffix=''){
+  let start=0;
+  const dur=1500;
+  const step=Math.ceil(end/60);
+  const timer=setInterval(()=>{
+    start=Math.min(start+step,end);
+    el.textContent=start+(suffix||'');
+    if(start>=end)clearInterval(timer);
+  },dur/60);
+}
+const cio=new IntersectionObserver(e=>{
+  e.forEach(x=>{
+    if
